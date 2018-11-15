@@ -1,0 +1,2 @@
+requires 'Mojo';
+requires 'IO::Socket::SSL';

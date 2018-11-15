@@ -1,0 +1,26 @@
+This repo has a collection of Docker images that let you practice
+the techniques exposed in the talk "Performance through lightweight".
+
+Each directory has a Makefile with two targets:
+
+```
+make container
+```
+
+Which builds the image in the directory. 
+
+```
+make run
+```
+
+Which runs the built container
+
+----
+
+Misc notes:
+
+Delete all docker images from a machine
+
+```
+docker rmi $(docker images | awk 'NR>1 { print $3 }')
+```
