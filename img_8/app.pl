@@ -8,6 +8,6 @@ my $content = $ua->get('https://metacpan.org/recent')->{ content };
 
 my ($results) = ($content =~ m/(\d+,\d+)/);
 
-get '/' => {text => "There are $results"};
+get '/' => {text => "These are $results"};
 
 app->start;
